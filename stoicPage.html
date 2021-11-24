@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>STOIC SAYINGS API</title>
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style type="text/css">
+    body {
+        background: url('https://i.ibb.co/Kz0kvKW/stoic-bg.png');
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: #fff;
+    }
+    .content{
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #show_time, #quote {
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 5px black;
+    }
+    #currentTime {
+        margin-top:6rem;    
+        font-weight: bold;
+    }
+    #logo-header{
+        margin-top: 4rem;
+    }
+    #share-btn{
+            background-color: #b4913e;
+            border-radius:20px;
+            margin-top:9rem;
+            margin-bottom:10rem;
+        }
+    .quote-main{
+            width: 60vw;
+            margin-top:3rem;
+        }
+        #quote{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        #author{
+            color: #b4954d;
+            font-size: 1.2em;
+        }
+  </style>
+  <body>
+    <center>
+        <a href="#" ><img src="https://i.ibb.co/ChxyTLW/stoic-logo1.png" alt="" width="80px" id="logo-header"> </a> 
+          
+        <h1 id="currentTime"></h1>
+        <div class="quote-main">
+            <span id="quote"></span> <br>
+            <h5 id="author"></h5> 
+            <h6 id="source"></h6>
+
+        </div>        
+     
+        <a id="share-link" target="_blank"> <button type="button" id="share-btn" class="btn btn-dark">Share</button></a> <br>
+
+    </center>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
